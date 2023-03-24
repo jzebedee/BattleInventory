@@ -1,0 +1,32 @@
+<Project Sdk="Bannerlord.BUTRModule.Sdk/1.0.1.85">
+
+  <PropertyGroup>
+    <Version>0.0.1</Version>
+    <TargetFramework>net472</TargetFramework>
+    <Platforms>x64</Platforms>
+    <LangVersion>10.0</LangVersion>
+    <Nullable>enable</Nullable>
+    
+    <ModuleId>$(MSBuildProjectName)</ModuleId>
+    <ModuleName>$(MSBuildProjectName)</ModuleName>
+    <GameFolder>$(BANNERLORD_GAME_DIR)</GameFolder>
+    <!-- Module manually override GameVersion -->
+    <!-- <OverrideGameVersion>v1.0.0</OverrideGameVersion> -->
+  </PropertyGroup>
+
+  <!-- Development Variables -->
+  <PropertyGroup>
+    <HarmonyVersion>2.2.2</HarmonyVersion>
+    <HarmonyExtensionsVersion>3.1.0.68</HarmonyExtensionsVersion>
+    <!--
+    <BUTRSharedVersion>3.0.0.122</BUTRSharedVersion>
+    <BUTRModuleManagerVersion>4.0.150</BUTRModuleManagerVersion>
+    -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" PrivateAssets="all" IncludeAssets="compile" />
+    <PackageReference Include="BUTR.Harmony.Analyzer" Version="1.0.1.42" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+  </ItemGroup>
+  
+</Project>
